@@ -1,0 +1,630 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --dark: #161616;
+  --darker: #000000;
+  --primary-btn: #da292a;
+  --hd-font: "Teko", fantasy;
+  --text-font: "Lato", sans-serif;
+  --text-color: rgba(0, 0, 0, 0.65);
+  --primary-hover: #e40b0b93;
+  --footer-color: #a3a3a3;
+}
+
+/* ------------Navigation section  */
+#nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.first-nav {
+  width: 100%;
+  height: 40px;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+}
+.first-nav i {
+  margin-right: 50px;
+  color: white;
+  font-size: 20px;
+  color: grey;
+  cursor: pointer;
+}
+.main-nav {
+  width: calc(100% - 40px);
+  display: flex;
+  padding: 10px 20px;
+  background: var(--darker);
+  align-items: center;
+}
+.logo {
+  width: 50px;
+}
+.logo img {
+  width: 100%;
+}
+.main-nav ul {
+  display: flex;
+}
+.main-nav li {
+  list-style: none;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  font-family: var(--hd-font);
+  color: white;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.nav-button {
+  padding: 15px 15px;
+  font-family: var(--text-font);
+  font-size: 17px;
+  background-color: var(--primary-btn);
+  text-transform: uppercase;
+  border: none;
+  color: white;
+}
+.spacer {
+  flex: 1;
+}
+.menu {
+  display: none;
+  z-index: 3;
+  cursor: pointer;
+}
+.menu span {
+  width: 20px;
+  height: 2px;
+  background: white;
+  display: block;
+  margin-top: 6px;
+}
+
+/* -----------Banner section */
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--text-font);
+}
+.banner video {
+  width: 100%;
+  height: auto;
+}
+.banner-img {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-img aside {
+  width: 90%;
+  margin-top: 20px;
+}
+.banner-img aside img {
+  width: 30%;
+  height: auto;
+  position: relative;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0%);
+}
+.banner-img aside p {
+  text-align: center;
+  width: 60%;
+  color: white;
+  font-size: 1.5rem;
+  margin: 0px auto;
+}
+.banner-btn {
+  padding: 20px 25px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 3px;
+  color: white;
+  position: relative;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0%);
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.banner-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* -----------------OverView Section */
+#overview {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-image: url("img/apex-overview-bg.jpg");
+  background-size: contain;
+  padding: 100px 0px;
+  font-family: var(--text-font);
+}
+.overview-img {
+  width: 500px;
+  height: 300px;
+  background: url("img/apex-md.jpg");
+  background-size: cover;
+}
+.text-hd {
+  font-family: var(--hd-font);
+  color: black;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.overview-text p {
+  padding-bottom: 20px;
+  color: var(--text-color);
+  line-height: 25px;
+  font-weight: 600;
+}
+.overview-text {
+  font-size: 18px;
+  width: 500px;
+}
+.btn {
+  padding: 15px 15px;
+  font-family: var(--text-font);
+  font-size: 17px;
+  background-color: var(--primary-btn);
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ------------------Legends section */
+#legends {
+  width: 100%;
+  background: url("img/apex-bg.jpg");
+  background: cover;
+  display: flex;
+  align-items: center;
+}
+#legends img {
+  width: 100%;
+  height: auto;
+}
+
+/* --------------------Squad section */
+#squad {
+  background: url("img/apex-bg.jpg");
+  padding: 50px 0px;
+}
+.squad-text-cont {
+  width: 80%;
+  margin: 0px auto;
+}
+#squad .squad-text-cont p {
+  font-family: var(--text-font);
+  font-size: 16px;
+  text-align: center;
+}
+.your-squad-cont {
+  width: 85%;
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.squad-img1 {
+  width: 360px;
+  height: 200px;
+  background: url("img/squad/1.jpg");
+  background-size: cover;
+}
+.squad-img2 {
+  width: 360px;
+  height: 200px;
+  background: url("img/squad/2.jpg");
+  background-size: cover;
+}
+.squad-img3 {
+  width: 360px;
+  height: 200px;
+  background: url("img/squad/3.jpg");
+  background-size: cover;
+}
+
+.squad-text {
+  width: 350px;
+}
+.squad-text h1 {
+  font-size: 25px;
+  font-family: var(--text-font);
+  color: black;
+  text-transform: uppercase;
+  margin-top: 30px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+}
+.squad-text p {
+  font-size: 16px;
+  color: var(--text-color);
+  font-family: var(--text-font);
+  text-align: left;
+  margin-left: 20px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+/* ------------------Divider section */
+#divider {
+  width: 100%;
+  background: url("img/apex-section-bg.jpg");
+  padding: 20px 0px 80px 0px;
+}
+.divider-line {
+  width: 60%;
+  margin: 0px auto;
+}
+.divider-line img {
+  width: 100%;
+  height: auto;
+}
+.divider-text {
+  width: 70%;
+  margin: 0px auto;
+}
+.divider-text h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+.divider-text p {
+  font-size: 18px;
+  font-family: var(--text-font);
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+/* ----------------------Explore Section */
+#explore {
+  background: url("img/apex-bg.jpg");
+  padding: 20px 0px;
+}
+#explore {
+  text-align: center;
+}
+.explore-cont {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+.exp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.explore-cont p {
+  text-align: center;
+  font-family: var(--text-font);
+  font-size: 16px;
+  color: white;
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 2px;
+  opacity: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.explore-cont p:hover {
+  transform: scale(1.1);
+}
+.exp-img1 {
+  width: 380px;
+  height: 220px;
+  background: url("img/explore/1.jpg");
+  background-size: cover;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+.exp-img1:hover {
+  background: linear-gradient(var(--primary-hover), var(--primary-hover)),
+    url("img/explore/1.jpg");
+  background-size: cover;
+}
+.exp-img2 {
+  width: 380px;
+  height: 220px;
+  background: url("img/explore/2.jpg");
+  background-size: cover;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+.exp-img2:hover {
+  background: linear-gradient(var(--primary-hover), var(--primary-hover)),
+    url("img/explore/2.jpg");
+  background-size: cover;
+}
+.exp-img3 {
+  width: 380px;
+  height: 220px;
+  background: url("img/explore/3.jpg");
+  background-size: cover;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+.exp-img3:hover {
+  background: linear-gradient(var(--primary-hover), var(--primary-hover)),
+    url("img/explore/3.jpg");
+  background-size: cover;
+}
+
+/* -----------------Free Section */
+#free {
+  width: 100%;
+  background: url("img/apex-section-bg-red.jpg");
+  background-size: cover;
+}
+#free h1 {
+  padding: 50px 0px;
+}
+.free-next {
+  font-family: var(--text-font);
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+.free-btn {
+  text-transform: uppercase;
+  color: white;
+  padding: 20px 20px;
+  border: 2px solid white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 2px;
+  background: transparent;
+  transform: scale(1);
+  font-size: 18px;
+}
+.free-btn:hover {
+  transform: scale(1.1);
+}
+.free-p {
+  text-align: center;
+  color: white;
+  font-family: var(--text-font);
+  width: 80%;
+  margin: 0px auto;
+  padding: 30px 0px;
+  font-size: 14px;
+}
+
+/* -------------------Footer Section */
+#footer {
+  width: 80%;
+  background: var(--dark);
+  padding: 30px 10%;
+  position: relative;
+}
+#footer ul {
+  width: 100%;
+  margin: 0pz auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#footer ul li:first-child {
+  margin-left: 0;
+}
+#footer ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+#footer ul li a {
+  color: var(--footer-color);
+  text-decoration: none;
+  font-family: var(--text-font);
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+}
+#footer ul li a:hover {
+  color: var(--primary-btn);
+}
+.join {
+  text-transform: uppercase !important;
+  color: white !important;
+  font-family: var(--hd-font) !important;
+  font-size: 18px !important;
+  text-decoration: none;
+  float: right;
+  position: absolute;
+  top: 30px;
+  right: 10%;
+}
+.footer-icon-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--footer-color);
+}
+.footer-icon-links i:last-child {
+  margin-right: 0;
+}
+.footer-icon-links i {
+  color: var(--primary-btn);
+  font-size: 20px;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transform: scale(1);-
+}
+.footer-icon-links i:hover {
+  transform: scale(1.4);
+}
+.foot-img-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+}
+.foot-img1 {
+  width: 100px ;
+  height: 150px;
+  background: url("./img/footer/apex-footer-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.foot-img2 {
+  width: 300px ;
+  height:  50px;
+  background: url("./img/footer/apex-respawn-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foot-img3 {
+  width: 200px ;
+  height:  100px;
+  background: url("./img/footer/apex-rating.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  .main-nav {
+    display: flex;
+    position: relative;
+  }
+  .main-nav ul {
+    width: 100%;
+    background-color: var(--darker);
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: block;
+    height: 100vh;
+    padding-top: 20px;
+    top: -120vh;
+  }
+  .active {
+    top: 0;
+  }
+
+  .main-nav ul li {
+    margin-bottom: 40px;
+  }
+  .main-nav ul li a {
+    margin-left: 20px;
+  }
+  .menu {
+    display: block;
+  }
+  .nav-button {
+    display: none;
+  }
+  .in-squad-cont:nth-child(1) {
+    margin-top: 0;
+  }
+  .in-squad-cont {
+    margin-top: 50px;
+  }
+  .exp-link {
+    margin-top: 50px;
+  }
+  #overview {
+   justify-content: center;
+  }
+  .overview-img {
+    width: 95%;
+  }
+  .overview-text {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #footer ul li:first-child {
+    margin-left: 50px;
+  } 
+  #footer ul {
+    width: 60%;
+  }
+  #footer ul li {
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .footer-icon-links {
+    justify-content: start;
+  }
+  .hr {
+    border-bottom: 1px solid var(--footer-col);
+  }
+  .join {
+    width: 100%;
+    position: relative;
+    float: left;
+    top: auto;
+    right: auto;
+    border-top: 1px solid var(--footer-color);
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  .foot-img {
+    margin-top: 40px;
+  }
+  /* .foot-img2 {
+    margin-left: 0;
+  } */
+}
+@media (max-width: 900px) {
+  .banner-img aside p {
+    display: none;
+  }
+  .banner-btn {
+    display: none;
+  }
+}
